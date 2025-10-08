@@ -3,6 +3,15 @@ import { useLoaderData, useParams } from "react-router";
 import { FaDownload } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { MdOutlineRateReview } from "react-icons/md";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+  ResponsiveContainer,
+} from "recharts";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -18,13 +27,14 @@ const AppDetails = () => {
     reviews,
     ratingAvg,
     downloads,
+    ratings,
   } = selectedApp;
 
   return (
     <div className="md:p-[80px] bg-[#F5F5F5]">
       <div className="flex gap-[40px]">
         <div className="w-[350px] h-[350px]">
-          <img className="w-full" src={image} alt="this is app image" />
+          <img className="w-full h-full" src={image} alt="this is app image" />
         </div>
         <div className="w-full">
           {/* heading  */}
@@ -60,9 +70,25 @@ const AppDetails = () => {
         </div>
       </div>
       <div className="divider"></div>
-      <div>
-        <h1>Ratings</h1>
+      <div className="mt-10 bg-white p-6 rounded-xl shadow-md">
+        <h1 className="text-xl font-semibold mb-4">Ratings</h1>
+        <div className="w-full h-[300px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={ratings}
+              layout="vertical"
+              margin={{ top: 5, right: 30, left: 30, bottom: 5 }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis type="number" />
+              <YAxis dataKey="name" type="category" />
+              <Tooltip />
+              <Bar dataKey="count" fill="#7C3AED" radius={[4, 4, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
+
       <div className="divider"></div>
       <div>
         <h1 className="font-bold text-2xl">Description</h1>
