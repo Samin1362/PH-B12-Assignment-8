@@ -8,12 +8,10 @@ const Navbar = () => {
       <Link to="/">
         <li>Home</li>
       </Link>
-      <li>
-        Apps
-      </li>
-      <li>
-        Installation
-      </li>
+      <Link to="/apps">
+        <li>Apps</li>
+      </Link>
+      <li>Installation</li>
     </>
   );
 
@@ -48,12 +46,16 @@ const Navbar = () => {
         <div className="flex items-center">
           <img className="w-[40px]" src={logo} alt="" />
           <Link to="/">
-            <button className="btn btn-ghost text-xl bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">HERO.IO</button>
+            <button className="btn btn-ghost text-xl bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+              HERO.IO
+            </button>
           </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 flex gap-3 font-semibold">{links}</ul>
+        <ul className="menu menu-horizontal px-1 flex gap-3 font-semibold">
+          {links}
+        </ul>
       </div>
       <div className="navbar-end">
         <a className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white py-[12px] px-[15px] rounded-lg">
