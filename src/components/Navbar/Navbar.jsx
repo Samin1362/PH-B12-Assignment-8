@@ -1,8 +1,21 @@
 import { FaGithub } from "react-icons/fa";
 import logo from "../../assets/images/logo.png";
+import { Link } from "react-router";
 
 const Navbar = () => {
-  const links = ["Home", "Apps", "Installation"];
+  const links = (
+    <>
+      <Link to="/">
+        <li>Home</li>
+      </Link>
+      <li>
+        Apps
+      </li>
+      <li>
+        Installation
+      </li>
+    </>
+  );
 
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -29,26 +42,18 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            {links.map((link) => (
-              <li>
-                <a href="">{link}</a>
-              </li>
-            ))}
+            {links}
           </ul>
         </div>
         <div className="flex items-center">
           <img className="w-[40px]" src={logo} alt="" />
-          <a className="btn btn-ghost text-xl bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">HERO.IO</a>
+          <Link to="/">
+            <button className="btn btn-ghost text-xl bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">HERO.IO</button>
+          </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {links.map((link) => (
-            <li>
-              <a href="">{link}</a>
-            </li>
-          ))}
-        </ul>
+        <ul className="menu menu-horizontal px-1 flex gap-3 font-semibold">{links}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white py-[12px] px-[15px] rounded-lg">

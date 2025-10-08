@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+    "title": "ZenFlow",
+    "companyName": "MindEase Labs",
+    "id": 1,
+    "description": "A meditation and focus app helping users stay calm and productive throughout the day.",
+    "size": 54,
+    "reviews": 2400,
+    "ratingAvg": 4.7,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 320 },
+      { "name": "4 star", "count": 540 },
+      { "name": "5 star", "count": 1240 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "title": "FitPulse",
+    "companyName": "CoreTech Fitness",
+    "id": 2,
+    "description": "AI-based fitness tracking app with personalized workout and nutrition guidance.",
+    "size": 82,
+    "reviews": 5100,
+    "ratingAvg": 4.5,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 1340 },
+      { "name": "5 star", "count": 2440 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "ArtMind",
+    "companyName": "Creative Nexus",
+    "id": 3,
+    "description": "Discover and generate AI art using advanced neural networks and style blending.",
+    "size": 96,
+    "reviews": 880,
+    "ratingAvg": 4.8,
+    "downloads": 540000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 210 },
+      { "name": "5 star", "count": 475 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1557800636-894a64c1696f",
+    "title": "Langly",
+    "companyName": "LinguaSoft",
+    "id": 4,
+    "description": "An AI-powered language learning app that adapts to your skill level and speed.",
+    "size": 63,
+    "reviews": 6200,
+    "ratingAvg": 4.6,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 410 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 1620 },
+      { "name": "5 star", "count": 3110 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1667238586553-e4ddb2b0cdbb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TmltYnVzJTIwUHJvZHVjdGl2aXR5fGVufDB8fDB8fHww",
+    "title": "TaskWave",
+    "companyName": "Nimbus Productivity",
+    "id": 5,
+    "description": "Streamline your daily workflow and projects with an AI-assisted task manager.",
+    "size": 49,
+    "reviews": 3200,
+    "ratingAvg": 4.3,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 640 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 1030 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+    "title": "TravelGo",
+    "companyName": "NextRoute Inc.",
+    "id": 6,
+    "description": "Plan, book, and track your trips effortlessly with AI-generated travel suggestions.",
+    "size": 70,
+    "reviews": 4100,
+    "ratingAvg": 4.4,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 440 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1360 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4",
+    "title": "MusicFlow",
+    "companyName": "WaveSync",
+    "id": 7,
+    "description": "Music streaming platform with AI playlists that match your daily mood.",
+    "size": 92,
+    "reviews": 7800,
+    "ratingAvg": 4.7,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 520 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 940 },
+      { "name": "4 star", "count": 1760 },
+      { "name": "5 star", "count": 3980 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d",
+    "title": "Readora",
+    "companyName": "Bookly Labs",
+    "id": 8,
+    "description": "Smart reading app that summarizes books and highlights key insights instantly.",
+    "size": 57,
+    "reviews": 2100,
+    "ratingAvg": 4.5,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "CookMate",
+    "companyName": "TasteWorks",
+    "id": 9,
+    "description": "AI-driven recipe app that creates personalized meal plans based on your diet.",
+    "size": 61,
+    "reviews": 4700,
+    "ratingAvg": 4.6,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 280 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 560 },
+      { "name": "4 star", "count": 1280 },
+      { "name": "5 star", "count": 2190 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216",
+    "title": "Studify",
+    "companyName": "EduSync",
+    "id": 10,
+    "description": "All-in-one study companion with flashcards, notes, and AI tutoring features.",
+    "size": 78,
+    "reviews": 3600,
+    "ratingAvg": 4.2,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 1260 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1670315264879-59cc6b15db5f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEJ1ZGdldFBybyUyMExhYnN8ZW58MHx8MHx8fDA%3D",
+    "title": "FinTrack",
+    "companyName": "BudgetPro Labs",
+    "id": 11,
+    "description": "Smart finance manager that categorizes spending and offers saving insights.",
+    "size": 59,
+    "reviews": 2900,
+    "ratingAvg": 4.3,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 280 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 880 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1506765515384-028b60a970df",
+    "title": "GameHub",
+    "companyName": "Playverse",
+    "id": 12,
+    "description": "Discover trending games, track achievements, and connect with other players.",
+    "size": 105,
+    "reviews": 6700,
+    "ratingAvg": 4.1,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 820 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1140 },
+      { "name": "4 star", "count": 1540 },
+      { "name": "5 star", "count": 2300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1497493292307-31c376b6e479",
+    "title": "PetPal",
+    "companyName": "HappyTail Studios",
+    "id": 13,
+    "description": "Pet care app offering health tracking, vet reminders, and a cute pet community.",
+    "size": 48,
+    "reviews": 1950,
+    "ratingAvg": 4.6,
+    "downloads": 620000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 970 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
+    "title": "Videon",
+    "companyName": "StreamForge",
+    "id": 14,
+    "description": "Next-gen video editing tool with AI scene detection and automatic subtitles.",
+    "size": 124,
+    "reviews": 3400,
+    "ratingAvg": 4.4,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 460 },
+      { "name": "4 star", "count": 880 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1682795706664-248cbb76f1c9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fE5ldXJvTGlua3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "MindMatch",
+    "companyName": "NeuroLink",
+    "id": 15,
+    "description": "AI-based personality matcher that helps you connect with like-minded people.",
+    "size": 68,
+    "reviews": 2600,
+    "ratingAvg": 4.0,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 370 },
+      { "name": "3 star", "count": 580 },
+      { "name": "4 star", "count": 670 },
+      { "name": "5 star", "count": 670 }
+    ]
+  }
+]
