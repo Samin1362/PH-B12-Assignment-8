@@ -6,11 +6,12 @@ import { useLoaderData } from 'react-router';
 const Home = () => {
 
   const apps = useLoaderData();
+  const eightApps = apps.slice(0, 8);
 
   return (
     <div>
       <Banner></Banner>
-      <Apps apps={apps}></Apps>
+      <Apps apps={eightApps}></Apps>
     </div>
   );
 };
