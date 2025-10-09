@@ -11,7 +11,9 @@ const Navbar = () => {
       <Link to="/apps">
         <li>Apps</li>
       </Link>
-      <li>Installation</li>
+      <Link to="/installation">
+        <li>Installation</li>
+      </Link>
     </>
   );
 
@@ -58,7 +60,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a href="https://github.com/Samin1362" target="blank" className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white py-[12px] px-[15px] rounded-lg">
+        <a
+          href="https://github.com/Samin1362"
+          target="blank"
+          className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white py-[12px] px-[15px] rounded-lg"
+        >
           <FaGithub /> Contribute
         </a>
       </div>
