@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 export const getStoredItems = () => {
   const storedItems = localStorage.getItem("readList");
 
@@ -13,12 +15,12 @@ export const storeItem = (id) => {
   const storedItems = getStoredItems();
 
   if (storedItems.includes(id)) {
-    alert("App is already installed");
+    toast.info("App is already installed"); 
   } else {
     storedItems.push(id);
     const converted = JSON.stringify(storedItems);
     localStorage.setItem("readList", converted);
-    alert("App installed successfully");
+    toast.success("App installed successfully");
   }
 };
 
@@ -26,5 +28,5 @@ export const removeItem = (id) => {
   const storedItems = getStoredItems();
   const updatedApps = storedItems.filter((appId) => appId !== String(id));
   localStorage.setItem("readList", JSON.stringify(updatedApps));
-  alert("App Uninstalled Successfully");
+  toast.error("App uninstalled successfully");
 };
