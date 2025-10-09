@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import { useLoaderData } from "react-router";
 import { Suspense, lazy } from "react";
 import SearchBar from "../SearchBar/SearchBar";
+import AppNotAvailable from "../AppNotAvailable/AppNotAvailable";
 const App = lazy(() => import("../App/App"));
 
 const AllApps = () => {
+  const [available, setAvailable] = useState(true);
   const apps = useLoaderData();
   const [query, setQuery] = useState("");
 
@@ -13,6 +15,13 @@ const AllApps = () => {
     app.companyName.toLowerCase().startsWith(query.toLowerCase())
   );
 
+  useEffect(() => {
+    if (filteredApps.length === 0){
+      setAvailable(false);
+    } else{
+      setAvailable(true);
+    }
+  },[filteredApps]);
 
   return (
     <div className="p-4 bg-[#F5F5F5]">
@@ -30,7 +39,36 @@ const AllApps = () => {
         <SearchBar onSearch={setQuery}></SearchBar>
       </div>
       {/* content  */}
-      <Suspense
+
+      {available ? (
+        <Suspense
+          fallback={
+            <div className="flex justify-center">
+              <RotatingLines
+                visible={true}
+                height="96"
+                width="96"
+                color="green"
+                strokeWidth="5"
+                animationDuration="0.75"
+                ariaLabel="rotating-lines-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+              />
+            </div>
+          }
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 items-center justify-center bg-[#F5F5F5] gap-4">
+            {filteredApps.map((app, idx) => (
+              <App key={idx} app={app}></App>
+            ))}
+          </div>
+        </Suspense>
+      ) : (
+        <AppNotAvailable></AppNotAvailable>
+      )}
+
+      {/* <Suspense
         fallback={
           <div className="flex justify-center">
             <RotatingLines
@@ -52,7 +90,7 @@ const AllApps = () => {
             <App key={idx} app={app}></App>
           ))}
         </div>
-      </Suspense>
+      </Suspense> */}
     </div>
   );
 };
