@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import { FaDownload } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
@@ -12,10 +12,21 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
+import { storeItem, getStoredItems } from "../../utilities/storeToDB";
 
 const AppDetails = () => {
   const { id } = useParams();
   const apps = useLoaderData();
+  const [install, setInstall] = useState(false);
+  const convertedID = Number(id);
+
+  useEffect(() => {
+    const storedItems = getStoredItems().map(Number);
+
+    if (storedItems.includes(convertedID)) {
+      setInstall(true);
+    }
+  }, [convertedID]);
 
   const selectedApp = apps.find((app) => app.id === Number(id));
 
@@ -31,7 +42,7 @@ const AppDetails = () => {
   } = selectedApp;
 
   return (
-    <div className="md:p-[80px] bg-[#F5F5F5]">
+    <div className="md:p-[80px] bg-[#F5F5F5] text-black">
       <div className="flex gap-[40px]">
         <div className="w-[350px] h-[350px]">
           <img className="w-full h-full" src={image} alt="this is app image" />
@@ -64,8 +75,11 @@ const AppDetails = () => {
               <h1 className="text-[40px] font-bold">{reviews}</h1>
             </div>
           </div>
-          <button className="bg-[#00D390] py-[14px] px-[20px] rounded-lg text-white font-semibold">
-            Install Now
+          <button
+            onClick={() => {storeItem(id); setInstall(true)}}
+            className="bg-[#00D390] py-[14px] px-[20px] rounded-lg text-white font-semibold mt-5"
+          >
+            {install ? "Installed" : "Install Now"}
           </button>
         </div>
       </div>
