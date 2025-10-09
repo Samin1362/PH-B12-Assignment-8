@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 
 const Root = () => {
   return (
-    <div>
+    <div className="max-w-[1600px] mx-auto">
       <ToastContainer
         position="top-right"
         autoClose={5000}

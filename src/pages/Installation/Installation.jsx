@@ -22,14 +22,14 @@ const Installation = () => {
   return (
     <div className="bg-[#F5F5F5]">
       {/* heading  */}
-      <div className="pt-[80px] pb-[40px] text-black text-center">
-        <h1 className="text-[48px] font-bold">Your Installed Apps</h1>
+      <div className="pt-[20px] md:pt-[80px] pb-[40px] text-black text-center">
+        <h1 className="text-4xl md:text-[48px] font-bold">Your Installed Apps</h1>
         <p className="text-xl">
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
       {/* content */}
-      <div className="pb-4">
+      <div className="p-4">
         {/* content heading */}
         <div className="mb-4 flex justify-between items-center">
           <h1 className="text-2xl font-semibold">

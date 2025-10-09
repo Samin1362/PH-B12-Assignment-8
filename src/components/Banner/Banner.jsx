@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGooglePlay } from "react-icons/fa";
 import { FaAppStore } from "react-icons/fa";
-import heroImage from "../../assets/images/hero.png"
+import heroImage from "../../assets/images/hero.png";
 
 const Banner = () => {
   return (
@@ -24,11 +24,15 @@ const Banner = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center my-[15px] md:my-[0px] gap-[16px]">
-          <button className="flex items-center gap-2 py-[16px] px-[20px] border-2 border-gray-300 rounded-lg text-[20px] font-semibold">
-            <FaGooglePlay className="text-[32px]" /> Google Play
+          <button className="py-[16px] px-[20px] border-2 border-gray-300 rounded-lg text-[20px] font-semibold">
+            <a className="flex items-center gap-2 " href="https://play.google.com/store/games?hl=en" target="blank">
+              <FaGooglePlay className="text-[32px]" /> Google Play
+            </a>
           </button>
-          <button className="flex items-center gap-2 py-[16px] px-[20px] border-2 border-gray-300 rounded-lg text-[20px] font-semibold">
-            <FaAppStore className="text-[32px]" /> App Store
+          <button className="py-[16px] px-[20px] border-2 border-gray-300 rounded-lg text-[20px] font-semibold">
+            <a className="flex items-center gap-2" href="https://www.apple.com/app-store/" target="blank">
+              <FaAppStore className="text-[32px]" /> App Store
+            </a>
           </button>
         </div>
       </div>
@@ -37,7 +41,11 @@ const Banner = () => {
         <img src={heroImage} alt="" />
       </div>
       <div className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white p-[10px] md:p-[80px] flex flex-col items-center gap-[40px] w-full">
-        <div><h1 className="text-[20px] md:text-[48px] font-bold">Trusted by Millions, Built for You</h1></div>
+        <div>
+          <h1 className="text-[20px] md:text-[48px] font-bold">
+            Trusted by Millions, Built for You
+          </h1>
+        </div>
         <div className="flex flex-col md:flex-row gap-[24px]">
           <div className="flex flex-col items-center">
             <h2>Total Downloads</h2>

@@ -13,7 +13,7 @@ const InstalledApp = ({ installedApp, setStoredItems }) => {
   }
 
   return (
-    <div className="mb-4 flex items-center justify-between p-4 rounded-lg bg-white">
+    <div className="mb-4 flex flex-col md:flex-row items-center justify-between p-4 rounded-lg bg-white">
       <div className="flex gap-4 items-center">
         <div className="w-[80px] h-[80px]">
           <img className="w-full h-full rounded-lg" src={image} alt="" />
