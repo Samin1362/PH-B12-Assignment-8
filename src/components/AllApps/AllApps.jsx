@@ -27,12 +27,12 @@ const AllApps = () => {
     <div className="p-4 bg-[#F5F5F5]">
       {/* heading */}
       <div className="text-center mt-[10px] md:mt-[80px] md:mb-[40px] text-black">
-        <h1 className="text-[48px] font-bold">Our All Applications</h1>
+        <h1 className="text-4xl md:text-[48px] font-bold">Our All Applications</h1>
         <p>
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
-      <div className="flex items-center justify-between mb-[22px] text-black">
+      <div className="flex flex-col md:flex-row gap-2 items-center justify-between mb-[22px] text-black">
         <h1 className="font-semibold text-2xl">
           ({filteredApps.length}) Apps Found
         </h1>

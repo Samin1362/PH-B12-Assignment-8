@@ -43,8 +43,8 @@ const AppDetails = () => {
 
   return (
     <div className="md:p-[80px] bg-[#F5F5F5] text-black">
-      <div className="flex gap-[40px]">
-        <div className="w-[350px] h-[350px]">
+      <div className="flex flex-col md:flex-row gap-[40px]">
+        <div className="w-[350px] h-[350px] mx-auto">
           <img className="w-full h-full" src={image} alt="this is app image" />
         </div>
         <div className="w-full">
