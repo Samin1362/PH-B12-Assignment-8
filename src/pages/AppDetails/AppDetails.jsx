@@ -75,12 +75,28 @@ const AppDetails = () => {
               <h1 className="text-[40px] font-bold">{reviews}</h1>
             </div>
           </div>
-          <button
-            onClick={() => {storeItem(id); setInstall(true)}}
-            className="bg-[#00D390] py-[14px] px-[20px] rounded-lg text-white font-semibold mt-5"
-          >
-            {install ? "Installed" : "Install Now"}
-          </button>
+          {install ? (
+            <button
+              disabled
+              onClick={() => {
+                storeItem(id);
+                setInstall(true);
+              }}
+              className="bg-[#87d2bb] py-[14px] px-[20px] rounded-lg text-white font-semibold mt-5"
+            >
+              {install ? "Installed" : "Install Now"}
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                storeItem(id);
+                setInstall(true);
+              }}
+              className="bg-[#00D390] py-[14px] px-[20px] rounded-lg text-white font-semibold mt-5"
+            >
+              {install ? "Installed" : "Install Now"}
+            </button>
+          )}
         </div>
       </div>
       <div className="divider"></div>
